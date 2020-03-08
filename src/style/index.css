@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:underline; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; } 
+body{ height: 100vh; background: #FAFAFA;}
+img{ height: 100%; width: 100%; }
+a:link, a:active, a:visited { text-decoration: none; }
+/* 修改vant 内部的全局颜色 */
+.am-navbar{ background-color: #EF2646;}
+*::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+	html {
+    	background: rgba(0, 0, 0, 0.6);
+    	margin: 0 auto;
+    	/* font-size: 200px !important; */
+	}
+	body {
+		width: 540PX !important;
+		margin: 0 auto !important;
+	}
+	*{
+		max-width: 540PX !important;
+		font-size: 18px ;
+	}
+	.am-modal-wrap, .am-modal-mask {
+		margin: 0 auto;
+	}
+}

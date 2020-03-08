@@ -1,0 +1,133 @@
+.graphTop{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    & p{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-right: .5px solid rgba(0,0,0,.1);
+        border-bottom: .5px solid rgba(0,0,0,.1);
+    }
+    & > p{
+        width: 22%;
+    }
+    .graphTopScroll{
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        .listGraphscroll{
+            width: auto;
+            display: flex;
+            position: absolute;
+        }
+    }
+}
+.braphBody{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    // 头部45PX 是antd 固定PX所以大写不被rem 转换
+    height: calc(100vh - 45Px - 280px);
+    .braphBody_left{
+        width: 44%;
+        overflow: hidden;
+        .leftList_hans{
+            display: flex;
+            & > p{
+                flex: 1;
+                height: 80px;
+                line-height: 80px;
+                border-right: .5px solid rgba(0,0,0,.1);
+                border-bottom: .5px solid rgba(0,0,0,.1);
+            }
+        }
+    }
+    .braphBody_right{
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        .braphBody_content{
+            width: auto;
+            position: absolute;
+            .content_list{
+                position: relative;
+                z-index: 188;
+                .line_Number{
+                    pointer-events:none;
+                    display: flex;
+                    & > p{
+                        width: 80px;
+                        height: 80px;
+                        line-height: 80px;
+                        border-right: .5px solid rgba(0,0,0,.1);
+                        border-bottom: .5px solid rgba(0,0,0,.1);
+                        &>span{
+                            display: inline-block;
+                            height: 60px;width: 60px;
+                            line-height: 60px;
+                            margin: 10px;
+                            &.action{
+                                background: #D99513;
+                                color: #ffffff;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            // 附着在 显示图层上面！
+            .mapLineChart{
+                position: absolute;
+                left: 0; top: 0;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+.fixedModel{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    .foot_left{
+        width: 44%;
+        border-right: 1px solid hsla(0,0%,100%,.44);
+        & > p{
+            height: 50px;
+            line-height: 50px;
+            color: #caaa70;
+            &:nth-child(odd){
+                background-color: #282830;
+            }
+            &:nth-child(even){
+                background-color: #17161b;
+            }
+        }
+    }
+    .foot_right{
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        .footListScroll{
+            width: auto;
+            position: absolute;
+            .lineList{
+                display: flex;
+                color: #ffffff;
+                &:nth-child(odd){
+                    background-color: #282830;
+                }
+                &:nth-child(even){
+                    background-color: #17161b;
+                }
+                &>p{
+                    height: 50px;
+                    width: 80px;
+                    line-height: 50px;
+                    border-left: 1px solid hsla(0,0%,100%,.44)
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.selectImg{
+    height: 202px;
+    width: 228px;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    img{
+        pointer-events:none;
+        height: 100%;
+    }
+}
+.showModelImg{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 199;
+    img{
+        width: 100%;
+        height: auto;
+        margin-top: 35%
+    }
+}
