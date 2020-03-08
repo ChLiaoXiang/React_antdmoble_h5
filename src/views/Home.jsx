@@ -65,10 +65,10 @@ class Homepage extends React.Component {
 						}
 						title="荣誉"
 						key="rYu"
-						selected={this.state.selectedTab === 'kaiJiang'}
+						selected={this.state.selectedTab === 'rYu'}
 						onPress={() => {
 							this.setState({
-								selectedTab: 'kaiJiang',
+								selectedTab: 'rYu',
 							});
 						}}
 					>
@@ -98,11 +98,11 @@ class Homepage extends React.Component {
 							/>
 						}
 						title="精彩"
-						key="gouCai"
-						selected={this.state.selectedTab === 'gouCai'}
+						key="jCai"
+						selected={this.state.selectedTab === 'jCai'}
 						onPress={() => {
 							this.setState({
-								selectedTab: 'gouCai',
+								selectedTab: 'jCai',
 							});
 						}}
 					>
@@ -126,15 +126,15 @@ class Homepage extends React.Component {
 							/>
 						}
 						title="日志"
-						key="genDan"
-						selected={this.state.selectedTab === 'genDan'}
+						key="logTab"
+						selected={this.state.selectedTab === 'logTab'}
 						onPress={() => {
 							this.setState({
-								selectedTab: 'genDan',
+								selectedTab: 'logTab',
 							});
 						}}
 					>
-						<div>我的朋友圈</div>
+						<div>个人日志</div>
 					</TabBar.Item>
 					<TabBar.Item
 						icon={
